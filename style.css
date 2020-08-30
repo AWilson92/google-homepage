@@ -1,0 +1,119 @@
+html {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 1.3rem;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+a:hover {
+    text-decoration: underline;
+}
+.navigation {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-nav a, .right-nav a {
+    line-height: 5rem;
+}
+.left-nav a {
+    opacity: 0.75;
+}
+.left-nav li {
+    margin-left: 2rem;
+}
+
+.right-nav button {
+    vertical-align: middle;
+    color: white;
+    font-weight: 900;
+    background-color: rgb(67, 135, 253);
+}
+#logo {
+    width: 100vw;
+    height: 30vh;
+    background-image: url(https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    margin-bottom: 5rem;
+}
+#search {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        "searchbox searchbox"
+        "button1 button2";
+}
+#search-container {
+    grid-area: searchbox;
+    justify-self: center;
+    width: 46rem;
+    height: 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 2.4rem;
+}
+#search input {
+    border: none;
+}
+#submit {
+    grid-area: button1;
+    justify-self: right;
+}
+#lucky {
+    grid-area: button2;
+    justify-self: left;
+}
+.buttons {
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color:rgb(95, 99, 104);
+    text-align: center;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 1.4rem;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgb(242, 242, 242);
+}
+#country {
+    padding-left: 2rem;
+    color: rgb(95, 99, 104);
+    font-size: 1.5rem;
+    height: 4rem;
+    line-height: 4rem;
+}
+#bottom-nav {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+#bottom-nav a {
+    color: #5f6368;
+    font-size: 1.4rem;
+    opacity: 1;
+}
